@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
   height: 100vh;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -16,6 +17,8 @@ body {
 
 header {
   height: 54px;
+  width: 100%;
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -23,23 +26,22 @@ header {
 
 header a {
   font-size: 12px;
-  color: black;
   margin: 0 8px;
 }
 
 header img {
-  width: 14px;
   height: 14px;
-  margin: 0 12px;
+  width: 14px;
+  margin: 0 8px;
 }
 
 header div img {
-  width: 28px;
   height: 28px;
+  width: 28px;
   border-radius: 14px;
 }
 
-/* Conteúdo principal */
+/* Conteúdo principal*/
 
 main {
   height: 50vh;
@@ -48,86 +50,60 @@ main {
   align-items: center;
 }
 
-main .logoGoogle {
+main > img {
+  height: 88px;
   margin-bottom: 32px;
 }
 
-main div.buscador {
-  height: 40 px;
-  width: 90%;
-  max-width: 560px;
+main .buscador {
+  height: 40px;
+  width: 500px;
   display: flex;
   border: 1px solid gray;
   border-radius: 20px;
-  padding: 8px;
 }
 
-main div.buscador img {
+main .buscador img {
   width: 20px;
-  margin: 0 4px;
+  margin: 0 8px;
 }
 
-main div.buscador input {
+main .buscador input {
   width: 100%;
-  height: 100%;
-  font-size: 18px;
+
+  font-size: 16px;
   border: none;
   outline: none;
-  margin-left: 8px;
 }
 
-main div.botoes {
-  height: 80px;
-  width: 90%;
-  max-width: 360px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-main div.botoes button {
+main div button {
   height: 32px;
   width: 128px;
-  color: #555555;
   border: none;
   border-radius: 4px;
-}
-
-main div.link {
-  margin-top: 24px;
-  font-size: 12px;
-}
-
-main div.link a {
-  margin-left: 8px;
+  margin: 16px 8px;
 }
 
 /* Rodapé */
 
 footer {
-  background-color: lightgrey;
-}
-
-footer .rodape {
-  height: 40px;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  background-color: lightgray;
   font-size: 14px;
 }
 
-footer .rodape.primeiro {
-  color: #555555;
-  padding-left: 16px;
+footer .rodape {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
 }
 
-footer .rodape.segundo {
+footer .rodape.links {
   justify-content: space-between;
-  padding-left: 8px;
-
   border-top: 1px solid gray;
 }
 
-footer .rodape.segundo a {
-  color: #555555;
-  margin: 0 8px;
+footer .rodape.links a {
+  margin-right: 4px;
 }
