@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Cabeçalho */
+
+header {
+  height: 54px;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header a {
+  font-size: 12px;
+  margin: 0 8px;
+}
+
+header img {
+  height: 14px;
+  width: 14px;
+  margin: 0 8px;
+}
+
+header div img {
+  height: 28px;
+  width: 28px;
+  border-radius: 14px;
+}
+
+/* Conteúdo principal*/
+
+main {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > img {
+  height: 88px;
+  margin-bottom: 32px;
+}
+
+main .buscador {
+  height: 40px;
+  width: 500px;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+main .buscador img {
+  width: 20px;
+  margin: 0 8px;
+}
+
+main .buscador input {
+  width: 100%;
+
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+main div button {
+  height: 32px;
+  width: 128px;
+  border: none;
+  border-radius: 4px;
+  margin: 16px 8px;
+}
+
+/* Rodapé */
+
+footer {
+  width: 100%;
+  background-color: lightgray;
+  font-size: 14px;
+}
+
+footer .rodape {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+footer .rodape.links {
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+
+footer .rodape.links a {
+  margin-right: 4px;
+}
