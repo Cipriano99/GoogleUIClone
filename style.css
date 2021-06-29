@@ -6,110 +6,80 @@
 
 body {
   height: 100vh;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 }
 
-a {
-  font-size: 14px;
-  color: #555;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Cabeçalho */
-
 header {
-  height: 54px;
-  width: 100%;
-
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+
+  padding: 8px;
 }
 
 header a {
-  margin: 0 8px;
+  font-size: 12px;
 }
 
-header img {
-  height: 14px;
-  width: 14px;
-  margin: 0 8px;
-}
-
-header div img {
+header img.perfil {
   height: 28px;
-  width: 28px;
   border-radius: 14px;
 }
 
-/* Conteúdo principal*/
-
 main {
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main .buscador {
-  height: 40px;
-  width: 500px;
-  display: flex;
+main div.buscador {
+  height: 32px;
+  width: 420px;
   border: 1px solid lightgray;
-  border-radius: 20px;
-  padding: 0 4px;
-  margin-top: 32px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px;
+  margin-top: 24px;
 }
 
-main .buscador img {
-  width: 20px;
-  margin: 0 8px;
-}
-
-main .buscador input {
+main div.buscador input {
   width: 100%;
 
-  font-size: 16px;
   border: none;
   outline: none;
 }
 
-main div button {
+main div.botoes button {
   height: 32px;
-  width: 128px;
+  width: 112px;
+
   border: none;
   border-radius: 4px;
-  margin: 16px 8px;
-}
 
-/* Rodapé */
+  margin-top: 24px;
+}
 
 footer {
-  width: 100%;
   background-color: lightgray;
-  font-size: 14px;
 }
 
-footer .rodape {
+footer div {
   height: 40px;
+  font-size: 14px;
+
   display: flex;
   align-items: center;
-  color: #555;
-  padding: 0 16px;
-}
-
-footer .rodape.links {
   justify-content: space-between;
-  border-top: 1px solid gray;
-}
 
-footer .rodape.links a {
-  margin-right: 8px;
+  padding: 8px;
+
+  border-bottom: 1px solid gray;
 }
